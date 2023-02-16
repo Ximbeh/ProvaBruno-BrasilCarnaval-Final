@@ -1,0 +1,275 @@
+body, h1, h2, h3, p, a{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #84C283;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.header_planta{
+    position: absolute;
+    bottom:  0;
+    max-width: 100%;
+    left: 0
+}
+
+header{
+    background-color: #b3c8ee;
+    padding: 7rem;
+    position: relative;
+    padding-top: 10rem;
+    
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    list-style: none;
+    margin: 1rem 30%;
+    position: absolute;
+    top: 0.8rem;
+    right: -28%;
+    
+}
+
+a{
+    margin: 0 auto;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color:#1e241e;
+    font-weight: bold;
+    z-index: 10;
+    text-decoration: none;
+    white-space: nowrap;
+    color:#346f60;
+    font-size: 0.8rem;
+    transition: .25s;
+}
+
+a:hover{
+    background-color: #346f60;
+    color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+main{
+    margin: 1rem 4rem;
+    padding-top: 0.1rem;
+    padding-bottom: 10rem;
+}
+
+main img{
+    display: inline-block;
+
+}
+
+h1{
+    color: #a84545;;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 2rem 0 2rem;
+}
+
+container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 5rem;
+    position: relative;
+
+}
+
+#map_svg{
+    max-width: 2vw;
+    position: absolute;
+    transition: .25s;
+    z-index: 100;
+}
+
+.map_floripa{
+    left: 18rem;
+    bottom: -27rem;
+}
+
+.map_rio{
+    left: 22rem;
+    bottom: -25rem;
+}
+
+.map_salvador{
+    left: 25rem;
+    top: 18rem;
+}
+
+.map_manaus{
+    left: 10rem;
+    top: 6rem
+}
+
+
+
+#map_svg:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+
+container h3{
+    color: #2B5D51;
+    font-size: 2rem;
+}
+
+container p{
+   color:#122722;
+   font-size: 1.2rem;
+   margin-right: 8rem;
+}
+
+
+footer img{
+    bottom: -2rem;
+    max-width: 100%;
+    position: absolute;
+}
+
+.tooltip{
+    position: relative;
+}
+
+#desc1{
+    position: absolute;
+    left: 50.7%;
+    bottom: -24rem;
+    transform: translateX(-50%);
+    background-color: #244834;
+    padding: 0.5rem 1.1rem;
+    border-radius: 5px;
+    color:#e2e2e2;
+    
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    white-space: nowrap;
+
+}
+
+#desc1::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 10px solid;
+    border-color: #244834 #0000 rgba(0, 0, 0, 0) #0000;
+}
+
+.tooltip:hover #desc1{
+    bottom: -24rem;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1000;
+}
+
+#desc2{
+    position: absolute;
+    left: 61.5%;
+    bottom: -22rem;
+    transform: translateX(-50%);
+    background-color: #244834;
+    padding: 0.5rem 1.1rem;
+    border-radius: 5px;
+    color:#e2e2e2;
+    
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    white-space: nowrap;
+
+}
+
+#desc2::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 10px solid;
+    border-color: #244834 #0000 rgba(0, 0, 0, 0) #0000;
+}
+
+.tooltip:hover #desc2{
+    bottom: -22rem;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1000;
+}
+
+#desc3{
+    position: absolute;
+    left: 29.3%;
+    bottom: -4.7rem;
+    transform: translateX(-50%);
+    background-color: #244834;
+    padding: 0.5rem 1.1rem;
+    border-radius: 5px;
+    color:#e2e2e2;
+    
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    white-space: nowrap;
+
+}
+
+#desc3::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 10px solid;
+    border-color: #244834 #0000 rgba(0, 0, 0, 0) #0000;
+}
+
+.tooltip:hover #desc3{
+    bottom: -4.7rem;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1000;
+}
+
+#desc4{
+    position: absolute;
+    left: 69.5%;
+    bottom: -16.8rem;
+    transform: translateX(-50%);
+    background-color: #244834;
+    padding: 0.5rem 1.1rem;
+    border-radius: 5px;
+    color:#e2e2e2;
+    
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    white-space: nowrap;
+
+}
+
+#desc4::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 10px solid;
+    border-color: #244834 #0000 rgba(0, 0, 0, 0) #0000;
+}
+
+.tooltip:hover #desc4{
+    bottom: -16.8rem;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1000;
+}

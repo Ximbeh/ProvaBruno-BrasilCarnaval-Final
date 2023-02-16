@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
+    <title>Carnaval Brasil</title>
+</head>
+<body>
+    <!-- <header>
+        <h1>Carnaval Brasil</h1>
+    </header> -->
+
+    <section class="fundo">
+        <img src="./img/header img/Céu.png" id="ceu">
+        <img src="./img/header img/Floresta (7).png" id="floresta3">
+        <img src="./img/header img/Floresta (6).png" id="floresta2">
+        <img src="./img/header img/Floresta (5).png" id="floresta1">
+        <h1 id="titulo">Carnaval Brasil</h1>
+        <img src="./img/header img/Confetes (4).png" id="confete">
+        <img src="./img/header img/Gramado (3).png" id="gramado2">
+        <img src="./img/header img/Folhas (2).png" id="folha">
+        <img src="./img/header img/Gramado (1).png" id="gramado1">
+        
+        
+        
+        
+        
+        
+    </section>
+
+    <main id="main">
+        <h2>Não sabe aonde curtir?</h2>
+        <container>
+
+            <img src="./img/Mulher1.png" alt="">
+           
+            <article>
+                <p> O Carnaval Brasil te mostra os maiores encontros festivos para este Carnaval 2023 em todo o Brasil, entregando a você as melhores opções com informações detalhadas, localidades, preços, artistas e muito mais!</p>
+                <a href="./html/index2.html"> Partiu aglomerar!!</a>
+            </article>
+            
+        </container>
+
+        <footer>
+            <img src="./img/Footer-Gramado.png" alt="">
+        </footer>
+    </main>
+</body>
+</html>
+
+<script>
+    let aceu = document.getElementById('ceu');
+    let afloresta3 = document.getElementById('floresta3');
+    let afloresta2 = document.getElementById('floresta2');
+    let afloresta1 = document.getElementById('floresta1');
+    let atext = document.getElementById('titulo');
+    let aconfete = document.getElementById('confete');
+    let agramado2 = document.getElementById('gramado2');
+    let afolha = document.getElementById('folha');
+    let agramado1 = document.getElementById('gramado1');
+    let amain = document.getElementById('main');
+
+    window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        aceu.style.top  = value * 0.01 + 'px';
+        afloresta3.style.top  = value * 1.3 + 'px';
+        afloresta2.style.top  = value * 1.1 + 'px';
+        afloresta1.style.top  = value * .9 + 'px';
+        // atext.style.top  = value * .1 + '12rem';
+        aconfete.style.top  = value * 0.7 + 'px';
+        aconfete.style.left  = value * 0.3 + 'px';
+        agramado2.style.top  = value * .5 + 'px';
+        afolha.style.top  = value * 0.7 + 'px';
+        // agramado1.style.top  = value * 1 + 'px';
+        // main.style.top = value * 1 + 'px';
+
+
+    })
+</script>
